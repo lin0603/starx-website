@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starx Interactive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    * { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+    html { scroll-behavior: smooth; }
+    .product-card { transition: transform 0.3s ease, opacity 0.3s ease; }
+    .product-card:hover { transform: translateY(-4px); }
+  </style>
+</head>
+<body class="bg-black text-white antialiased">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-xl border-b border-white/10">
+    <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+      <span class="text-sm font-medium tracking-widest text-white/80 uppercase">Starx Interactive</span>
+      <a href="mailto:starxwebservice@gmail.com" class="text-sm text-white/50 hover:text-white transition-colors">聯絡我們</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6 pt-14">
+    <p class="text-sm font-medium tracking-widest text-white/40 uppercase mb-6">Starx Interactive</p>
+    <h1 class="text-5xl md:text-7xl font-semibold leading-tight tracking-tight mb-6">
+      打造改變日常的<br />智慧工具
+    </h1>
+    <p class="text-xl text-white/50 max-w-xl leading-relaxed">
+      我們專注於開發簡單、強大的 AI 應用，<br class="hidden md:block"/>讓每個人都能享受科技帶來的便利。
+    </p>
+    <div class="mt-16 w-px h-16 bg-gradient-to-b from-white/20 to-transparent mx-auto"></div>
+  </section>
+
+  <!-- Products -->
+  <section class="max-w-5xl mx-auto px-6 pb-32 space-y-6">
+
+    <!-- iFunLine -->
+    <div class="product-card rounded-3xl overflow-hidden bg-gradient-to-br from-blue-950 to-black border border-blue-500/20 p-10 md:p-16">
+      <div class="max-w-2xl">
+        <p class="text-blue-400 text-sm font-medium tracking-widest uppercase mb-4">iFunLine 愛翻Line</p>
+        <h2 class="text-4xl md:text-5xl font-semibold leading-tight mb-6">
+          LINE 雙向即時翻譯
+        </h2>
+        <p class="text-white/60 text-lg leading-relaxed mb-10">
+          邀請好友加入聊天，即可開始雙向翻譯溝通。支援越南文、印尼文、日文、泰文、英文等多國語言，讓語言不再是距離。
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="https://www.facebook.com/iFunLine/" target="_blank"
+            class="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-400 text-white text-sm font-medium px-6 py-3 rounded-full transition-colors">
+            了解更多
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+          <a href="https://translinebot.starxinteractive.com" target="_blank"
+            class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white text-sm font-medium px-6 py-3 rounded-full transition-colors">
+            開始使用
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- TrustRent -->
+    <div class="product-card rounded-3xl overflow-hidden bg-gradient-to-br from-rose-950 to-black border border-rose-500/20 p-10 md:p-16">
+      <div class="max-w-2xl">
+        <p class="text-rose-400 text-sm font-medium tracking-widest uppercase mb-4">TrustRent 租安心</p>
+        <h2 class="text-4xl md:text-5xl font-semibold leading-tight mb-6">
+          台灣第一<br />AI 智慧租約平台
+        </h2>
+        <p class="text-white/60 text-lg leading-relaxed mb-10">
+          只要回答幾個問題，AI 自動生成完整租約。支援電子簽名、遠端回簽、司法背景查詢，讓簽約流程簡單又安全。
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="https://trustrent.starxinteractive.com" target="_blank"
+            class="inline-flex items-center gap-2 bg-rose-500 hover:bg-rose-400 text-white text-sm font-medium px-6 py-3 rounded-full transition-colors">
+            了解更多
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white text-sm font-medium px-6 py-3 rounded-full transition-colors">
+            App Store
+          </a>
+          <a href="#" class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white text-sm font-medium px-6 py-3 rounded-full transition-colors">
+            Google Play
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- HookHeros -->
+    <div class="product-card rounded-3xl overflow-hidden bg-gradient-to-br from-emerald-950 to-black border border-emerald-500/20 p-10 md:p-16">
+      <div class="max-w-2xl">
+        <p class="text-emerald-400 text-sm font-medium tracking-widest uppercase mb-4">HookHeros 大咬聯盟</p>
+        <h2 class="text-4xl md:text-5xl font-semibold leading-tight mb-6">
+          AI 釣魚識別<br />數位新紀元
+        </h2>
+        <p class="text-white/60 text-lg leading-relaxed mb-10">
+          拍照即識魚種，自動記錄天氣、潮汐與地點，打造專屬捕獲地圖。與全台釣友分享榮譽，開啟你的 AI 釣魚之旅。
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href="https://www.hookheros.com" target="_blank"
+            class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-white text-sm font-medium px-6 py-3 rounded-full transition-colors">
+            了解更多
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-12 px-6">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-white/30 text-sm">© 2026 Starx Interactive. All rights reserved.</p>
+      <div class="flex gap-6 text-sm text-white/30">
+        <a href="mailto:starxwebservice@gmail.com" class="hover:text-white transition-colors">starxwebservice@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
